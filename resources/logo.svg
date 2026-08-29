@@ -1,0 +1,26 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(112, 112) scale(1.5625)">
+    <!-- centered within a safe zone so adaptive-icon masking never clips it -->
+    <path d="M158 96h140l64 64v256a20 20 0 0 1-20 20H158a20 20 0 0 1-20-20V116a20 20 0 0 1 20-20z" fill="#ffffff"/>
+    <path d="M298 96l64 64h-44a20 20 0 0 1-20-20z" fill="#c7d2fe"/>
+    <rect x="170" y="220" width="150" height="16" rx="8" fill="#4338ca" opacity="0.55"/>
+    <rect x="170" y="256" width="150" height="16" rx="8" fill="#4338ca" opacity="0.55"/>
+    <rect x="170" y="292" width="96" height="16" rx="8" fill="#4338ca" opacity="0.55"/>
+    <g transform="translate(300,300)">
+      <rect x="0" y="0" width="130" height="130" rx="24" fill="#0f172a"/>
+      <g fill="#ffffff">
+        <rect x="16" y="16" width="30" height="30" rx="4"/>
+        <rect x="84" y="16" width="30" height="30" rx="4"/>
+        <rect x="16" y="84" width="30" height="30" rx="4"/>
+        <rect x="58" y="16" width="12" height="12"/>
+        <rect x="58" y="42" width="12" height="12"/>
+        <rect x="84" y="58" width="12" height="12"/>
+        <rect x="58" y="84" width="12" height="12"/>
+        <rect x="84" y="96" width="12" height="12"/>
+        <rect x="58" y="108" width="12" height="12"/>
+        <rect x="108" y="84" width="12" height="12"/>
+        <rect x="108" y="108" width="12" height="12"/>
+      </g>
+    </g>
+  </g>
+</svg>
