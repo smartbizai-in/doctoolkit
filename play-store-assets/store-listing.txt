@@ -1,0 +1,61 @@
+SHORT DESCRIPTION (77/80 chars)
+PDF & Word tools, image converter, OCR scanner, and QR/barcode — all offline.
+
+FULL DESCRIPTION
+DocToolkit is a complete document toolkit that runs entirely on your phone — no
+internet required, no account, no ads, nothing ever uploaded anywhere.
+
+Convert, scan, and organize your PDFs, Word documents, and images without
+sending a single file to someone else's server. Everything happens on-device.
+
+📄 PDF TOOLS
+• Images to PDF and PDF to images
+• Merge multiple PDFs into one
+• Organize — reorder, rotate, or delete pages
+• Compress large PDFs
+• PDF to Word, and Word to PDF
+
+🖼️ IMAGE TOOLS
+• Compress images without losing clarity
+• Convert between JPG, PNG, and WebP
+
+🔎 OCR — TEXT FROM PHOTOS
+Point your camera at a printed page or photograph a document, and get back
+editable text. Works fully offline — no cloud OCR service involved.
+
+📷 QR & BARCODE SCANNER
+Scan any QR code or barcode with your camera, or scan one from a photo already
+in your gallery.
+
+✨ CREATE QR CODES & BARCODES
+Generate QR codes for text, links, WiFi passwords, UPI payments, contact
+cards, email, SMS, or phone numbers. Generate barcodes in CODE128, EAN-13/8,
+UPC, CODE39, and ITF-14.
+
+🕘 HISTORY
+A local record of what you've converted, so you can find and re-share a
+result without redoing the work — kept only on your device.
+
+Light, dark, and system theme support.
+
+WHY OFFLINE MATTERS
+Most "free" PDF/QR apps online quietly upload your files to a server to do the
+actual conversion — which means your documents, ID photos, or business papers
+pass through someone else's infrastructure. DocToolkit never does this. Every
+tool — PDF conversion, OCR, image compression, QR generation — runs as code on
+your own phone. There's no server for your files to reach, because DocToolkit
+doesn't have one.
+
+PERMISSIONS
+• Camera — only for the QR/barcode scanner and OCR's "take a photo" option.
+  Every other tool works with no camera access at all.
+• Storage — to open the files you pick and save the files you create.
+That's the complete list. No location, no contacts, no microphone.
+
+Questions or feedback: support@smartbizai.in
+Privacy Policy: https://doctoolkit-legal.vercel.app
+
+---
+CATEGORY: Productivity
+CONTENT RATING: Everyone
+TAGS: pdf converter, pdf to word, word to pdf, qr code scanner, barcode scanner, qr code generator, ocr scanner, image converter, offline pdf tools
