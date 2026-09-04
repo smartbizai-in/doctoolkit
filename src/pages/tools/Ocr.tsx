@@ -6,9 +6,10 @@ import { Card } from '@/components/ui/Card'
 import { ProgressBar } from '@/components/ui/ProgressBar'
 import { usePickFiles } from '@/hooks/usePickFiles'
 import { takePhoto } from '@/lib/camera'
-import { downloadInBrowser, shareFile } from '@/lib/files'
+import { downloadInBrowser, persistFile, shareFile } from '@/lib/files'
 import { isNative } from '@/lib/platform'
 import { recognizeTextWithTimeout } from '@/lib/ocr'
+import { useHistoryStore } from '@/store/historyStore'
 
 const OCR_TIMEOUT_MS = 45_000
 
@@ -33,7 +34,11 @@ export default function Ocr() {
         setError("This image is taking unusually long to read — try a clearer, more evenly-lit photo.")
         return
       }
-      setText(result.text || '(No text was found in this image)')
+      const extracted = result.text || '(No text was found in this image)'
+      setText(extracted)
+      const name = `${file.name.replace(/\.[^.]+$/, '')}.txt`
+      const uri = await persistFile({ name, mimeType: 'text/plain', data: new Blob([extracted], { type: 'text/plain' }) }, 'ocr')
+      useHistoryStore.getState().add({ toolId: 'ocr', title: name, fileUri: uri, mimeType: 'text/plain' })
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Could not read this image')
     } finally {

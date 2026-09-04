@@ -1,8 +1,12 @@
 import { createWorker, type Worker } from 'tesseract.js'
 
-/** Resolves a public/ asset to an absolute URL regardless of dev vs Capacitor base path. */
+/** Resolves a public/ asset to an absolute URL regardless of dev vs Capacitor base path.
+ *  Must resolve against the site root, not `document.baseURI` — the OCR tool is a
+ *  client-side route (e.g. /tools/ocr), and `document.baseURI` reflects that route, not
+ *  where index.html (and public/) actually live. Resolving relative to it turned
+ *  'tesseract/worker.min.js' into '/tools/tesseract/worker.min.js', 404ing on every call. */
 function assetUrl(path: string): string {
-  return new URL(path, document.baseURI).href
+  return new URL(path, location.origin + '/').href
 }
 
 let workerPromise: Promise<Worker> | null = null
