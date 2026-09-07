@@ -1,5 +1,7 @@
 # DocToolkit
 
+📱 **[Get it on Google Play](https://play.google.com/store/apps/details?id=com.smartbizai.doctoolkit)**
+
 An offline-first document toolkit for Android: PDF and Word conversion, image tools, and a
 QR/barcode scanner + generator. React + Vite + TypeScript, wrapped for Android with Capacitor.
 
